@@ -1,4 +1,4 @@
-const CACHE = 'myhomegym-v3-root-photos';
+const CACHE = 'myhomegym-v4-ordered-workouts';
 const CORE = ['./', './index.html', './manifest.webmanifest'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting()));
